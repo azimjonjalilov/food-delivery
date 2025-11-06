@@ -1,15 +1,123 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+ * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+   font-family: "Inter", sans-serif;
 }
 
-body {
-    background: #f5f9fb;
-     width: 1440px;
+body{
+  background-color: #dfdfdf;
 }
+
+.wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+  background-color: #F5FBFC;
+}
+ 
+/* contact section start */
+
+.contact {
+  background-color: #F5FBFC;
+  padding: 140px 120px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contact-header {
+  line-height: 55px;
+  letter-spacing: 1.65px;
+  font-size: 55px;
+  font-weight: 400; 
+  color: #35B8BE;
+  font-family: "Inter", sans-serif;
+}
+
+.contact-desc {
+  margin-top: 29px;
+  font-size: 18px;
+  color: #546285;
+  line-height: 27px;
+  font-weight: 400;
+  letter-spacing: 0.36px;
+}
+
+.contact-info .btn {
+  display: inline-block;
+  margin-top: 47px;
+  padding: 18px 34px 20px 34px;
+  background-color: #35B8BE;
+  border: 1px solid #35B8BE;
+  font-size: 18px;
+  line-height: 20px;
+  color: #FFFFFF;
+  border-radius: 6px;
+  text-decoration: none;
+} 
+
+.contact-info .btn:hover {
+  background-color: #fff;
+  color: #35B8BE;
+  border: 1px solid #35B8BE;
+  transition: all 0.4s ease;
+}
+/* contact section end */
+
+/* support section start */
+.support {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 43px;
+  display: grid;
+  gap: 22px;
+  grid-template-columns: repeat(2,1fr);
+}
+
+.support-info {
+  background-image: url(img/IMAGE\ \(2\).png);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+
+.support-info span {
+  font-size: 51px;
+  line-height: 60.5px;
+  letter-spacing: 1.65px;
+  color: #1B9097;
+}
+
+.support-info .support-title {
+  margin-left: 60px;
+  font-size: 51px;
+  color: #fff;
+  line-height: 60.5px;
+  letter-spacing: 1.65px;
+}
+
+.support-info .btn {
+  display: inline-block;
+  margin: 52px 0px 0px 60px;
+  padding: 18px 34px 19px 34px;
+  background-color: #fff;
+  color: #35B8BE;
+  border: 1px solid #FFFFFF;
+  font-size: 17px;
+  line-height: 20px;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.support-info .btn:hover {
+  transition: all 0.4s ease;
+  color: #FFFFFF;
+  background-color: rgba(0, 0, 0, 0);
+}
+/*  support section end */
+
 /* hero section start  */
 .hero {
     display: flex;
@@ -183,13 +291,6 @@ body {
     }
 }
 
-=======
-    font-family: "Poppins" sans-serif;
-}
-
-body {
-    background: #ffffff;
-}
 
 .container {
     max-width: 1200px;
