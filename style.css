@@ -90,9 +90,7 @@
   letter-spacing: 0.32px;
   color: #546285;
 }
-.burger-dream{
 
-}
 .burger-type{
   margin: 0 auto;
   display: grid;
@@ -301,6 +299,6 @@
     flex-direction: column;
     gap: 15px;
   }
-  /* ===== Media section end ===== */
 }
 
+/* ===== Media section end ===== */
