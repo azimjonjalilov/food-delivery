@@ -3,6 +3,305 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+/* header start */
+
+header {
+  max-width: 1640px;
+  width: 100%;
+}
+
+.order-now {
+  width: 100%;
+  height: 50px;
+  background-color: #35b8be;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.order-now p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #fff;
+  opacity: 80%;
+}
+
+.order-now a {
+  font-size: 14px;
+  font-weight: 400;
+  color: #fff;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+/* header end */
+
+/* navbar start */
+
+nav {
+  width: 1200px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+nav #logo-link {
+  transition: all 0.3s ease;
+}
+
+nav #logo-link:hover {
+  transform: scale(1.1);
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #28224b;
+  font-size: 15px;
+  font-weight: 400;
+  transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #35b8be;
+}
+
+nav #buy-now {
+  width: 70px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+
+/* navbar end */
+
+/* footer start */
+
+footer {
+  width: 100%;
+  height: 600px;
+  background-image: url(img/footer-background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+footer .footer-content {
+  width: 1200px;
+  height: 450px;
+  margin: 0 auto;
+  padding-top: 150px;
+}
+
+footer .footer-content .footer-info1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo-info img {
+  padding-bottom: 10px;
+}
+
+.logo-info p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #546285;
+}
+
+.company p,
+.template p,
+.flowbase p {
+  color: #08090a;
+  font-size: 13px;
+  letter-spacing: 1.5px;
+}
+
+.company {
+  line-height: 3;
+}
+
+.company ul {
+  list-style: none;
+}
+
+.company ul li a {
+  text-decoration: none;
+  color: #546285;
+  font-size: 15px;
+  transition: all 0.3s ease;
+}
+
+.company ul li a:hover {
+  color: #35b8be;
+}
+
+.template {
+  line-height: 3;
+}
+
+.template ul {
+  list-style: none;
+}
+
+.template ul li a {
+  text-decoration: none;
+  color: #546285;
+  font-size: 15px;
+  transition: all 0.3s ease;
+}
+
+.template ul li a:hover {
+  color: #35b8be;
+}
+
+.flowbase {
+  line-height: 3;
+}
+
+.flowbase a {
+  text-decoration: none;
+  font-size: 15px;
+  color: #546285;
+  transition: all 0.3s ease;
+}
+
+.flowbase a:hover {
+  color: #35b8be;
+}
+
+.line img {
+  width: 1200px;
+  margin-top: 80px;
+}
+
+.footer-info2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-info2 p {
+  font-size: 16px;
+  color: #353448;
+  margin-top: 30px;
+}
+
+.footer-info2 span a {
+  text-decoration: none;
+  color: #35b8be;
+}
+
+.icons a img {
+  width: 40px;
+  margin-top: 30px;
+}
+
+.icons{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* footer end */
+
+/* Responsive styles */
+@media screen and (max-width: 1250px) {
+  nav,
+  footer .footer-content {
+    width: 90%;
+  }
+  .line img {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  nav {
+    height: auto;
+    flex-direction: column;
+    padding: 20px 0;
+  }
+  nav ul {
+    margin: 20px 0;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  footer {
+    height: auto;
+    padding-bottom: 30px;
+  }
+  footer .footer-content {
+    height: auto;
+    padding-top: 80px;
+  }
+  footer .footer-content .footer-info1 {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .logo-info {
+    width: 100%;
+    text-align: center;
+  }
+  .company,
+  .template,
+  .flowbase {
+    width: 30%;
+    min-width: 200px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .order-now {
+    padding: 10px;
+    height: auto;
+    text-align: center;
+  }
+  .order-now p,
+  .order-now a {
+    font-size: 12px;
+  }
+  nav ul {
+    gap: 10px;
+  }
+  nav ul li a {
+    font-size: 14px;
+  }
+  .footer-info2 {
+    flex-direction: column;
+    text-align: center;
+  }
+  .icons {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .company,
+  .template,
+  .flowbase {
+    width: 100%;
+    text-align: center;
+  }
+  footer .footer-content .footer-info1 {
+    gap: 20px;
+  }
+  .logo-info p {
+    font-size: 14px;
+  }
 }
 
 /* menu section start */
