@@ -1,5 +1,84 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins" sans-serif;
+}
+
+body {
+    background: #ffffff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 20px;
+}
+
+.left {
+    position: relative;
+    width: 50%;
+}
+
+.phone-stack {
+    position: relative;
+    width: 350px;
+    margin-left: 40px;
+}
+
+.phone {
+    width: 100%;
+    border-radius: 30px; 
+    /* box-shadow: 0 10px 30px rgba(0,0,0,0.15); */
+}
+
+.back {
+    width: 578px;
+    height: 586px;
+    top: -0.45px;
+    left: 40px;
+    opacity: 1; 
+
+}
+
+
+.tag {
+    color: #00a8b5;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+.right {
+    width: 45%;
+}
+
+.right h1 {
+    font-size: 42px;
+    color: #2bb4c6;
+    margin-bottom: 20px;
+}
+
+.right p {
+    font-size: 17px;
+    color: #666;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.faq-btn {
+    background: #2bb4c6;
+    color: white;
+    padding: 15px 35px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.faq-btn:hover {
+    background: #22909e;
 }
