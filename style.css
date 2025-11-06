@@ -4,6 +4,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 .menu{
   margin: 0 auto;
   /* max-width: 1440px; */
@@ -302,3 +303,222 @@
 }
 
 /* ===== Media section end ===== */
+
+/* freshcard section start*/
+.Freshcard {
+  width: 100%;
+  height: 894px;
+  /* border: 2px solid red; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #F5FBFC;
+}
+
+.Freshcard .left h1 {
+  color: #35B8BE;
+  font-family: sans-serif;
+  font-weight: 100;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  line-height: 25px;
+  margin-bottom: 20px;
+}
+
+.Freshcard .left {
+  width: 578px;
+  height: 616px;
+  /* border: 2px solid black; */
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  line-height: 20px;
+}
+
+.Freshcard .left p {
+  color: #546285;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  width: 420px
+}
+
+.Freshcard button {
+  width: 194px;
+  height: 60px;
+  font-size: 17px;
+  border-radius: 6px;
+  border: none;
+  color: white;
+  background-color: #35B8BE;
+  margin-top: 30px;
+}
+
+.Freshcard .right img {
+  width: 523px;
+  height: 614px;
+
+}
+
+/* freshcard section end*/
+
+/* Howworks section start */
+
+.container {
+  width: 1200px;
+  height: 575px;
+  margin-top: 80px;
+  /* border: 2px solid red; */
+  margin-left: 40px;
+}
+
+.container h1 {
+  color: #35B8BE;
+  font-family: sans-serif;
+  font-weight: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+}
+
+.card {
+  width: 333.33px;
+  height: 440.025px;
+  /* border: 2px solid black; */
+  margin-top: 40px;
+}
+
+.card img {
+  width: 333px;
+}
+
+.card h4 {
+  color: #08090A;
+  font-family: sans-serif;
+  font-weight: 500;
+  display: flex;
+  line-height: 40px;
+  align-items: center;
+  justify-content: center;
+}
+
+.card p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 220px;
+  text-align: center;
+  margin-left: 55px;
+  color: #546285;
+  line-height: 20px;
+}
+
+/* Howworks section end */
+
+/* RESPONSIVE DESIGN */
+
+/* Planshetlar uchun (768px gacha) */
+@media (max-width: 768px) {
+  .Freshcard {
+    flex-direction: column;
+    height: auto;
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  .Freshcard .left {
+    width: 100%;
+    height: auto;
+    align-items: center;
+  }
+
+  .Freshcard .left h1 {
+    font-size: 28px;
+    justify-content: center;
+  }
+
+  .Freshcard .left p {
+    width: 90%;
+    font-size: 16px;
+    line-height: 25px;
+  }
+
+  .Freshcard button {
+    width: 160px;
+    height: 50px;
+    font-size: 15px;
+  }
+
+  .Freshcard .right img {
+    width: 90%;
+    height: auto;
+    margin-top: 40px;
+  }
+
+  .container {
+    width: 100%;
+    margin-left: 0;
+    padding: 0 20px;
+    height: auto;
+  }
+
+  .cards {
+    flex-wrap: wrap;
+    gap: 50px;
+  }
+
+  .card {
+    width: 80%;
+    height: auto;
+  }
+
+  .card img {
+    width: 100%;
+  }
+
+  .card p {
+    margin-left: 0;
+    width: 90%;
+  }
+}
+
+/* Telefonlar uchun (480px gacha) */
+@media (max-width: 480px) {
+  .Freshcard .left h1 {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .Freshcard .left p {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .Freshcard button {
+    width: 140px;
+    height: 45px;
+    font-size: 14px;
+  }
+
+  .cards {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .card {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .card p {
+    font-size: 14px;
+  }
+}
